@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurea Scripta | A Mari Usque Ad Mare, la saga di Armand Du Silence</title>
+<meta name="description" content="Edizioni Aurea Scripta: la saga storica A Mari Usque Ad Mare di Armand Du Silence. Tre secoli di rotte, commerci e destini, dal Seicento all'alba del mondo moderno.">
+<style>
+  :root{
+    --blu:#152238;
+    --blu-scuro:#0d1626;
+    --oro:#c9a45c;
+    --avorio:#f5f0e4;
+    --carta:#fdfbf5;
+    --testo:#26221c;
+    --grigio:#6e675c;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;color:var(--testo);background:var(--carta);line-height:1.7}
+  .container{max-width:1040px;margin:0 auto;padding:0 24px}
+
+  .langbar{background:var(--blu-scuro);color:#b9b3a4;font-size:.8rem;padding:6px 0;font-family:Helvetica,Arial,sans-serif}
+  .langbar .container{display:flex;justify-content:flex-end;gap:14px}
+  .langbar .attiva{color:var(--oro);font-weight:bold;border-bottom:1px solid var(--oro)}
+  .langbar .presto{opacity:.45;cursor:default}
+
+  header{background:linear-gradient(180deg,var(--blu) 0%,var(--blu-scuro) 100%);color:var(--avorio);padding:72px 0 64px;text-align:center}
+  header .casa{font-family:Helvetica,Arial,sans-serif;font-size:.85rem;letter-spacing:.35em;text-transform:uppercase;color:var(--oro);margin-bottom:18px}
+  header h1{font-size:2.6rem;font-weight:normal;font-style:italic;letter-spacing:.02em}
+  header .sotto{margin-top:14px;font-size:1.1rem;color:#cfc8b8}
+  header .autore{margin-top:26px;font-family:Helvetica,Arial,sans-serif;font-size:.9rem;letter-spacing:.18em;text-transform:uppercase;color:var(--oro)}
+
+  nav{background:var(--carta);border-bottom:1px solid #e6dfd0;position:sticky;top:0;z-index:10}
+  nav .container{display:flex;justify-content:center;gap:32px;padding:14px 24px;flex-wrap:wrap}
+  nav a{color:var(--blu);text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:.88rem;letter-spacing:.06em;text-transform:uppercase}
+  nav a:hover{color:var(--oro)}
+
+  section{padding:64px 0}
+  h2{font-size:1.9rem;font-weight:normal;color:var(--blu);text-align:center;margin-bottom:8px}
+  .filo{width:56px;height:2px;background:var(--oro);margin:14px auto 38px}
+
+  .saga .testo{max-width:720px;margin:0 auto;font-size:1.1rem}
+  .saga p{margin-bottom:18px}
+  .saga .motto{text-align:center;font-style:italic;font-size:1.3rem;color:var(--oro);margin-bottom:26px}
+
+  .recensione{background:var(--blu);color:var(--avorio);text-align:center}
+  .recensione h2{color:#fff}
+  .recensione .filo{background:var(--oro)}
+  .recensione blockquote{max-width:680px;margin:0 auto;font-size:1.5rem;font-style:italic;line-height:1.5}
+  .recensione .fonte{margin-top:22px;font-family:Helvetica,Arial,sans-serif;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:var(--oro)}
+  .recensione .fonte a{color:var(--oro)}
+  .recensione .nota{margin-top:10px;font-size:.9rem;color:#cfc8b8}
+
+  .romanzi{background:var(--carta)}
+  .libro{display:flex;gap:36px;align-items:flex-start;max-width:860px;margin:0 auto 56px}
+  .libro img{width:220px;flex-shrink:0;border-radius:3px;box-shadow:0 6px 20px rgba(13,22,38,.35)}
+  .libro .vol{font-family:Helvetica,Arial,sans-serif;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--oro);margin-bottom:6px}
+  .libro h3{font-size:1.5rem;font-weight:normal;color:var(--blu);margin-bottom:14px}
+  .libro .incipit{font-style:italic;color:var(--grigio);margin-bottom:14px}
+  .libro p{margin-bottom:12px}
+  @media(max-width:640px){.libro{flex-direction:column;align-items:center;text-align:center}.libro img{width:200px}}
+
+  .futuro{background:var(--avorio)}
+  .futuro ol{max-width:560px;margin:0 auto;padding-left:0;list-style:none}
+  .futuro li{padding:12px 4px;border-bottom:1px solid #e0d8c4;display:flex;gap:16px;align-items:baseline}
+  .futuro li b{font-family:Helvetica,Arial,sans-serif;font-size:.78rem;letter-spacing:.1em;color:var(--oro);min-width:80px}
+  .futuro .nota{text-align:center;margin-top:26px;font-style:italic;color:var(--grigio)}
+
+  .autore-sez{background:var(--blu);color:var(--avorio);text-align:center}
+  .autore-sez h2{color:#fff}
+  .autore-sez .filo{background:var(--oro)}
+  .autore-sez .testo{max-width:680px;margin:0 auto}
+  .autore-sez .nome{font-size:1.5rem;font-style:italic;margin-bottom:18px;color:var(--oro)}
+  .autore-sez p{margin-bottom:14px}
+
+  .store .lista{max-width:640px;margin:0 auto}
+  .store .voce{display:flex;align-items:baseline;gap:14px;padding:16px 4px;border-bottom:1px solid #e6dfd0}
+  .store .voce b{min-width:130px;font-family:Helvetica,Arial,sans-serif;font-size:.9rem;letter-spacing:.04em;color:var(--blu)}
+  .store a{color:var(--oro)}
+  .store .nota{max-width:640px;margin:26px auto 0;text-align:center;font-style:italic;color:var(--grigio);font-size:.95rem}
+
+  .contatti{background:var(--avorio);text-align:center}
+  .contatti p{margin-bottom:10px;font-size:1.05rem}
+  .contatti a{color:var(--oro)}
+
+  footer{background:var(--blu-scuro);color:#8d8778;text-align:center;padding:26px 0;font-size:.85rem;font-family:Helvetica,Arial,sans-serif}
+</style>
+</head>
+<body>
+
+<div class="langbar">
+  <div class="container">
+    <span class="attiva">IT</span>
+    <span class="presto" title="In preparazione">EN</span>
+    <span class="presto" title="In preparazione">FR</span>
+  </div>
+</div>
+
+<header>
+  <div class="container">
+    <div class="casa">Edizioni Aurea Scripta</div>
+    <h1>A Mari Usque Ad Mare</h1>
+    <div class="sotto">Una saga storica in dieci volumi: rotte, commerci e destini di una famiglia, dal Seicento all'alba del mondo moderno</div>
+    <div class="autore">Armand Du Silence</div>
+  </div>
+</header>
+
+<nav>
+  <div class="container">
+    <a href="#saga">La saga</a>
+    <a href="#recensione">La critica</a>
+    <a href="#romanzi">I romanzi</a>
+    <a href="#futuro">I prossimi volumi</a>
+    <a href="#autore">L'autore</a>
+    <a href="#store">Dove trovarli</a>
+    <a href="#contatti">Contatti</a>
+  </div>
+</nav>
+
+<section class="saga" id="saga">
+  <div class="container">
+    <h2>La saga</h2>
+    <div class="filo"></div>
+    <div class="testo">
+      <p class="motto">"A Mari Usque Ad Mare": non solo un motto, ma una rotta da seguire.</p>
+      <p>Due mari, due terre, un destino che attraversa i secoli. Dalle coste d'Europa alle acque del Nuovo Mondo, dalle rotte africane ai mercati d'Oriente, la saga segue le generazioni di una famiglia di mercanti dentro tre secoli di storia: viaggi, conquiste, commerci, fratture.</p>
+      <p>Ogni volume racconta un'epoca e un volto diverso del potere: il sangue della conquista, il silenzio dei traffici, il calcolo delle grandi compagnie, le idee che cambiano il mondo. Non una celebrazione, ma un racconto onesto di come è nato il mondo moderno, con il suo prezzo.</p>
+      <p>Quattro romanzi sono già pubblicati. La rotta è tracciata fino al decimo volume.</p>
+    </div>
+  </div>
+</section>
+
+<section class="recensione" id="recensione">
+  <div class="container">
+    <h2>La critica</h2>
+    <div class="filo"></div>
+    <blockquote>"A fascinating journey into seventeenth-century New France"</blockquote>
+    <div class="fonte"><a href="https://thecoffeepotbookclub.blogspot.com/2026/07/book-review-from-one-sea-to-another-by.html" target="_blank" rel="noopener">The Coffee Pot Book Club</a> · recensione editoriale di "From One Sea to Another" (Vol. I), luglio 2026</div>
+    <div class="nota">Blog di riferimento anglofono per la narrativa storica indipendente</div>
+  </div>
+</section>
+
+<section class="romanzi" id="romanzi">
+  <div class="container">
+    <h2>I romanzi</h2>
+    <div class="filo"></div>
+
+    <div class="libro">
+      <img src="img/vol1.jpg" alt="Copertina Volume I Da un Mare all'Altro">
+      <div>
+        <div class="vol">Volume I</div>
+        <h3>Da un Mare all'Altro</h3>
+        <p class="incipit">Due mari. Due terre. Un destino che attraversa secoli.</p>
+        <p>Nel cuore di un'epoca di confini mobili e identità in cerca di radici, un uomo intraprende un viaggio che lo porterà dalle coste battute dal vento dell'Europa alle acque misteriose del Nuovo Mondo.</p>
+        <p>Tra antichi stemmi, giuramenti dimenticati e onde che custodiscono segreti, il racconto di un cammino che sfida la storia, la natura e se stesso.</p>
+      </div>
+    </div>
+
+    <div class="libro">
+      <img src="img/vol2.jpg" alt="Copertina Volume II Sangue e Terra">
+      <div>
+        <div class="vol">Volume II</div>
+        <h3>Sangue e Terra</h3>
+        <p class="incipit">La conquista non nasce mai dal silenzio. Nasce dal sangue e dal bisogno di possesso.</p>
+        <p>Nel Nuovo Mondo, le promesse del viaggio si scontrano con una realtà aspra, fatta di terre contese, violenza quotidiana e alleanze fragili. È il momento in cui la sopravvivenza diventa dominio e la terra smette di essere rifugio per trasformarsi in posta in gioco.</p>
+        <p>È il tempo in cui le radici vengono piantate con la forza, e nulla potrà crescere senza portarne il segno.</p>
+      </div>
+    </div>
+
+    <div class="libro">
+      <img src="img/vol3.jpg" alt="Copertina Volume III Il Respiro dell'Africa">
+      <div>
+        <div class="vol">Volume III</div>
+        <h3>Il Respiro dell'Africa</h3>
+        <p class="incipit">Il mondo si allarga, ma il prezzo da pagare diventa più alto.</p>
+        <p>Nuove rotte si aprono verso coste dove il commercio non riguarda solo merci, ma esseri umani. La storia entra in una zona d'ombra dove il profitto giustifica ogni scelta e la distanza attenua il peso della colpa, mentre la coscienza individuale viene messa alla prova da decisioni irreversibili.</p>
+        <p>Non tutto ciò che respira è libero. E non tutto ciò che arricchisce può essere dimenticato.</p>
+      </div>
+    </div>
+
+    <div class="libro">
+      <img src="img/vol4.jpg" alt="Copertina Volume IV Le Indie e la Seta">
+      <div>
+        <div class="vol">Volume IV</div>
+        <h3>Le Indie e la Seta</h3>
+        <p class="incipit">Quando la violenza si fa silenziosa, assume la forma del commercio.</p>
+        <p>Le rotte si moltiplicano, gli imperi si allungano, e il potere impara a parlare il linguaggio dell'eleganza e della ricchezza. Le grandi compagnie mercantili trasformano oceani e porti in strumenti di influenza, tra culture che si sfiorano senza comprendersi e alleanze costruite sul vantaggio reciproco.</p>
+        <p>La seta brilla, ma non scalda. E ogni rotta tracciata porta con sé un prezzo invisibile.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="futuro" id="futuro">
+  <div class="container">
+    <h2>I prossimi volumi</h2>
+    <div class="filo"></div>
+    <ol>
+      <li><b>Volume V</b> Il Sole e la Croce</li>
+      <li><b>Volume VI</b> La Via delle Spezie</li>
+      <li><b>Volume VII</b> Ombre d'Europa</li>
+      <li><b>Volume VIII</b> Il Grande Mare del Sud</li>
+      <li><b>Volume IX</b> Il Sangue della Rivoluzione</li>
+      <li><b>Volume X</b> Il Destino del Mondo</li>
+    </ol>
+    <p class="nota">La saga è progettata in dieci volumi: i titoli dal V al X sono in lavorazione.</p>
+  </div>
+</section>
+
+<section class="autore-sez" id="autore">
+  <div class="container">
+    <h2>L'autore</h2>
+    <div class="filo"></div>
+    <div class="testo">
+      <div class="nome">Armand Du Silence</div>
+      <p>Autore di narrativa storica. Con la saga "A Mari Usque Ad Mare" ricostruisce tre secoli di rotte commerciali e destini familiari, unendo il respiro del romanzo d'avventura alla precisione della ricostruzione storica.</p>
+      <p>Pubblica con Edizioni Aurea Scripta in italiano, inglese e francese.</p>
+    </div>
+  </div>
+</section>
+
+<section class="store" id="store">
+  <div class="container">
+    <h2>Dove trovare i romanzi</h2>
+    <div class="filo"></div>
+    <div class="lista">
+      <div class="voce"><b>Amazon</b><span><a href="https://www.amazon.it/stores/author/B0GVHY74HX" target="_blank" rel="noopener">Pagina autore Armand Du Silence</a> (tutti i volumi)</span></div>
+      <div class="voce"><b>Altri store</b><span>I Volumi I e II sono disponibili anche su Kobo, Apple Books, Google Play, Barnes &amp; Noble e altri store, in italiano, inglese e francese</span></div>
+    </div>
+    <p class="nota">Edizioni disponibili in italiano, inglese e francese. Del Volume I esiste anche l'edizione audiolibro.</p>
+  </div>
+</section>
+
+<section class="contatti" id="contatti">
+  <div class="container">
+    <h2>Contatti</h2>
+    <div class="filo"></div>
+    <p>Email: <a href="mailto:dualpen.books@hotmail.com">dualpen.books@hotmail.com</a></p>
+    <p>Casa editrice: Edizioni Aurea Scripta</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© 2026 Edizioni Aurea Scripta · Tutti i diritti riservati</div>
+</footer>
+
+</body>
+</html>
