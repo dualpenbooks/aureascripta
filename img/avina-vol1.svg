@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 520" width="820" height="520" role="img" aria-label="Recensione di Anthony Avina: 10 su 10, a must-read, per From One Sea to Another">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#152238"/>
+      <stop offset="1" stop-color="#0d1626"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="820" height="520" fill="url(#bg)"/>
+  <rect x="22" y="22" width="776" height="476" fill="none" stroke="#c9a45c" stroke-width="2"/>
+  <rect x="30" y="30" width="760" height="460" fill="none" stroke="#c9a45c" stroke-width="0.75" opacity="0.5"/>
+
+  <text x="410" y="86" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" letter-spacing="6" fill="#c9a45c">B O O K   R E V I E W</text>
+
+  <g fill="#c9a45c">
+    <path transform="translate(330,126)" d="M0,-15 L3.5,-4.85 L14.27,-4.63 L5.71,1.86 L8.82,12.14 L0,6 L-8.82,12.14 L-5.71,1.86 L-14.27,-4.63 L-3.5,-4.85 Z"/>
+    <path transform="translate(370,126)" d="M0,-15 L3.5,-4.85 L14.27,-4.63 L5.71,1.86 L8.82,12.14 L0,6 L-8.82,12.14 L-5.71,1.86 L-14.27,-4.63 L-3.5,-4.85 Z"/>
+    <path transform="translate(410,126)" d="M0,-15 L3.5,-4.85 L14.27,-4.63 L5.71,1.86 L8.82,12.14 L0,6 L-8.82,12.14 L-5.71,1.86 L-14.27,-4.63 L-3.5,-4.85 Z"/>
+    <path transform="translate(450,126)" d="M0,-15 L3.5,-4.85 L14.27,-4.63 L5.71,1.86 L8.82,12.14 L0,6 L-8.82,12.14 L-5.71,1.86 L-14.27,-4.63 L-3.5,-4.85 Z"/>
+    <path transform="translate(490,126)" d="M0,-15 L3.5,-4.85 L14.27,-4.63 L5.71,1.86 L8.82,12.14 L0,6 L-8.82,12.14 L-5.71,1.86 L-14.27,-4.63 L-3.5,-4.85 Z"/>
+  </g>
+
+  <text x="410" y="172" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="4" fill="#f5f0e4" opacity="0.85">10 / 10</text>
+
+  <text x="410" y="238" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="54" fill="#c9a45c">A must-read</text>
+
+  <text x="410" y="300" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#f5f0e4">&#8220;The rich, powerful imagery the author uses</text>
+  <text x="410" y="332" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#f5f0e4">immediately stood out to me as a reader.&#8221;</text>
+
+  <line x1="365" y1="376" x2="455" y2="376" stroke="#c9a45c" stroke-width="1.5"/>
+
+  <text x="410" y="416" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="17" letter-spacing="4" fill="#c9a45c">ANTHONY AVINA</text>
+  <text x="410" y="440" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" letter-spacing="1" fill="#f5f0e4" opacity="0.8">authoranthonyavina.com · 2026</text>
+
+  <text x="410" y="476" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="13" fill="#cfc8b8">From One Sea to Another · A Mari Usque Ad Mare, Vol. I</text>
+</svg>
