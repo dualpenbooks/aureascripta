@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://aureascripta.com/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://aureascripta.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://aureascripta.com/en/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://aureascripta.com/fr/"/>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://aureascripta.com/en/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://aureascripta.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://aureascripta.com/en/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://aureascripta.com/fr/"/>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://aureascripta.com/fr/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://aureascripta.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://aureascripta.com/en/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://aureascripta.com/fr/"/>
@@ -71,5 +71,17 @@
   <url>
     <loc>https://aureascripta.com/fr/recensioni/vol4.html</loc>
     <lastmod>2026-08-19</lastmod>
+  </url>
+  <url>
+    <loc>https://aureascripta.com/intervista/</loc>
+    <lastmod>2026-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://aureascripta.com/en/interview/</loc>
+    <lastmod>2026-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://aureascripta.com/fr/entretien/</loc>
+    <lastmod>2026-09-19</lastmod>
   </url>
 </urlset>
